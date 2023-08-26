@@ -1,0 +1,165 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ########### CTA ############## */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem; 
+    justify-content: center;
+}
+
+/* ########### SOCIALS (HEADER)  ############## */
+.header__socials { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    
+}
+
+.header__socials a {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: var(--color-light);
+}
+
+.header__socials::before, 
+.header__socials::after {
+    content: '';
+    width: 5px;
+    height: 2rem;
+    background: var(--color-primary);
+
+}
+
+.header__socials a {
+    color: var(--color-light);
+    animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: var(--color-light);
+    }
+    
+    12.5% {
+        color: #FF5733; /* Random color 1 */
+    }
+
+    25% {
+        color: #37E43B; /* Random color 2 */
+    }
+
+    37.5% {
+        color: #3A6DE3; /* Random color 3 */
+    }
+
+    50% {
+        color: #FFD700; /* Random color 4 */
+    }
+
+    62.5% {
+        color: #FF8C00; /* Random color 5 */
+    }
+
+    75% {
+        color: #00CED1; /* Random color 6 */
+    }
+
+    87.5% {
+        color: #9932CC; /* Random color 7 */
+    }
+}
+
+/* ########### ME ############## */
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 35rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 100rem 10rem;
+    overflow: hidden;
+    padding: 8rem 1.5rem 1.5rem 1.5rem;
+
+}
+
+.scroll__down{ 
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--color-light);
+    animation: colorChange 5s infinite alternate;
+    }
+    
+    @keyframes colorChange {
+        0%, 100% {
+            color: var(--color-light);
+        }
+        
+        12.5% {
+            color: #FF5733; /* Random color 1 */
+        }
+    
+        25% {
+            color: #37E43B; /* Random color 2 */
+        }
+    
+        37.5% {
+            color: #3A6DE3; /* Random color 3 */
+        }
+    
+        50% {
+            color: #FFD700; /* Random color 4 */
+        }
+    
+        62.5% {
+            color: #FF8C00; /* Random color 5 */
+        }
+    
+        75% {
+            color: #00CED1; /* Random color 6 */
+        }
+    
+        87.5% {
+            color: #9932CC; /* Random color 7 */
+        }
+    
+}
+
+/* ############### MEDIA QUERIES (MEDIUM DEVICES) ################ */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+
+}
+
+/* ############### MEDIA QUERIES (SMALL DEVICES) ################ */
+@media screen and (max-width: 600px) {
+    header {
+        height: 68vh;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
