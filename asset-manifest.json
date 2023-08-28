@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LeonidasPersonalPortfolio/static/css/main.e609dda6.css",
+    "main.js": "/LeonidasPersonalPortfolio/static/js/main.db4a9f48.js",
+    "static/media/me.png": "/LeonidasPersonalPortfolio/static/media/me.833748b3b811a8fd24d4.png",
+    "static/media/me1.png": "/LeonidasPersonalPortfolio/static/media/me1.e25f0779c86df0ba41fb.png",
+    "static/media/CV.pdf": "/LeonidasPersonalPortfolio/static/media/CV.ca5cad78526f6dbe2f11.pdf",
+    "index.html": "/LeonidasPersonalPortfolio/index.html",
+    "main.e609dda6.css.map": "/LeonidasPersonalPortfolio/static/css/main.e609dda6.css.map",
+    "main.db4a9f48.js.map": "/LeonidasPersonalPortfolio/static/js/main.db4a9f48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e609dda6.css",
+    "static/js/main.db4a9f48.js"
+  ]
+}
